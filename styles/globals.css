@@ -1,0 +1,241 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+#__next {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.login__input,
+.login__password {
+  background: #e2e8ea;
+  border-radius: 6px;
+  width: 80%;
+  height: 48px;
+  margin-top: 8px;
+  border: none;
+  margin-top: 8px !important;
+  color: #35363e;
+  font-family: sans-serif;
+  padding: 0 0 0 9px;
+  
+}
+
+
+.login__input:focus::placeholder,
+.login__password:focus::placeholder,.uploadFile__text:focus::placeholder {
+  color: transparent;
+}
+.displayFile__search input:focus::placeholder {
+  color: transparent;
+}
+.admin_search input:focus::placeholder {
+  color: transparent;
+}
+.login__input::placeholder{
+  padding-left:0px !important;
+}
+.login__input{
+  text-indent: 3px;
+}
+
+
+Input::placeholder,
+Input::placeholder {
+  font-family: "Steradian ";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin: 13px 0;
+  margin-left: 16px !important;
+  font-family: sans-serif;
+
+  color: rgba(43, 44, 51, 0.5);
+}
+
+::-webkit-input-placeholder {
+  padding: 10px;
+}
+
+.login__submit {
+  padding: 14px 32px;
+  background: #35363e;
+  border-radius: 32px;
+  width: 65%;
+  height: 48px;
+  font-family: "Steradian ";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 25px !important;
+  border: none;
+  cursor: pointer;
+}
+
+.Header__login {
+  font-family: "Steradian ";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 124%;
+  font-family: sans-serif;
+  text-align: center;
+  color: #35363e;
+}
+
+.label_email,
+.label_password {
+  text-align: initial;
+  color: black;
+}
+
+.LoginForm_Container label {
+  font-family: "Steradian ";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #35363e;
+  line-height: 124%;
+  font-family: sans-serif;
+}
+.upload__container {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.uploadFile__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.uploadFile__text {
+  border: none;
+}
+.uploadFile__text:hover {
+  color: none;
+  border: none;
+}
+
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.file__view {
+  background: #ffffff;
+  border: 1px solid #37d9bd;
+  border-radius: 32px;
+  padding: 14px 32px;
+  width: 87px;
+  height: 38px;
+  color: #37d9bd;
+  margin-right: 8rem;
+  font-family: "Steradian ";
+  font-style: normal;
+  cursor: pointer;
+}
+input[type="text"]::placeholder {
+  padding: 3px;
+}
+.sidebar_green,
+.sidebar_orange,
+.sidebar_avatar {
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+input[type="file"] {
+  margin-top: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    /* background: black; */
+  }
+}
+
+@media (max-width: 600px) {
+  .adminsearch input[type="text"] {
+    width: 200px !important;
+  }
+  .box_uploadFile input[type="text"] {
+    width: 60% !important;
+  }
+  .box_uploadFile {
+    width: 100%;
+  }
+  .label_uploadFile {
+    text-align: center !important;
+  }
+  .displayFile__search input[type="search"] {
+    width: 200px !important;
+    margin-right: 2rem;
+  }
+  .File_Heading {
+    margin-left: 16px !important;
+  }
+  .uploadFile__text {
+    width: 100% !important;
+  }
+  .Profile_Box{
+    margin-left: 0 !important;
+  }
+  .ul_comment{
+    margin-right: 0 !important;
+  }
+  .userFile_name{
+    height: auto;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .userFile_filename{
+      font-size: 10px;
+      
+  }
+  .li_name,.li_time,.li_comment{
+    font-size: 12px !important;
+  }
+  .userFile_filename,.userFile_name,.userFile_comment
+  {
+    width: 25%;
+    height: auto;
+    font-size: 14px;
+  }
+  .view_btn{
+    margin-right: 0;
+  }
+  .userFile_comment{
+    margin-right: 10px;
+  }
+
+ 
+}
+
+@media (min-width: 1025px) {
+  .Header__login,
+  .label_email,
+  .login__input,
+  .label_password,
+  .login__password,
+  .login__submit {
+    width: 432px;
+  }
+  .Header__login {
+    text-align: initial;
+  }
+  .UserFile__Container {
+    margin-left: 8rem;
+  }
+}
